@@ -1,0 +1,50 @@
+// universal base selectors
+// -----------------------------------
+*
+  box-sizing: border-box
+
+p
+  margin-bottom: 1.5em
+  line-height: 1.25em
+
+// module and layout
+// -----------------------------------
+.container
+  margin: 0 calc(50% - 500px)
+  float: left
+  color: white
+  background-color: orange
+
+.col-left
+  font-size: 1.5em
+  width: 500px
+  padding: 20px
+  float: left
+  background-color: blue
+
+.col-right
+  @extend .col-left
+  padding: 0
+  background-color: transparent
+
+
+.ad-box
+  width: 400px
+  margin: 0 50px
+  margin-top: 60px
+  line-height: 100px
+  background-color: purple
+  text-align: center
+
+.nav-box
+  @extend .ad-box
+  background-color: green
+
+
+// modifiers
+// -----------------------------------
+.fixed
+  position: fixed
+  margin-left: 50px
+  top: 0
+  float: left
